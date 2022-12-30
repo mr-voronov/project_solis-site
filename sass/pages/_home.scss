@@ -1,0 +1,68 @@
+body {
+    background-color: $bg-color-body;
+}
+
+.home-page {
+    margin: 0 auto;
+    padding-top: 30px;
+
+    background-color: $bg-color-home-page;
+    background-image: url('../static/bg-images/first-screen-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    .sect-first {
+        max-width: 523px;
+    }
+
+    .sect-info {
+        padding: 45px 0;
+        max-width: 770px;
+        height: 580px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 40px;
+
+        background-color: $bg-color-home-page;
+        opacity: .9;
+
+        span {
+            padding-bottom: 40px;
+            width: 48%;
+            position: relative;
+            text-align: center;
+        }
+
+        p {
+            width: 52%;
+        }
+    }
+
+    .sect-benefit {
+        &-first,
+        &-second,
+        &-third,
+        &-fourth {
+            max-width: 570px;
+            min-height: 250px;
+            padding: 50px 35px 0 35px;
+
+            border-top: 1px solid $border-color-primary;
+        }
+    }
+
+    .sect-quote {
+        padding: 100px 300px 160px 160px;
+        min-height: 400px;
+
+        background-image: url('../static/bg-images/quote-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+
+    }
+}

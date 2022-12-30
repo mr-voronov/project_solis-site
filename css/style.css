@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/* line 2, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-mt-45 {
+  margin-top: 45px;
+}
+
+/* line 6, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-mt-120 {
+  margin-top: 120px;
+}
+
+/* line 10, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-mt-150 {
+  margin-top: 150px;
+}
+
+/* line 14, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-mb-20 {
+  margin-bottom: 20px;
+}
+
+/* line 18, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-mb-30 {
+  margin-bottom: 30px;
+}
+
+/* line 22, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-mb-40 {
+  margin-bottom: 40px;
+}
+
+/* line 26, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-mb-50 {
+  margin-bottom: 50px;
+}
+
+/* line 30, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-mb-120 {
+  margin-bottom: 120px;
+}
+
+/* line 34, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-mb-150 {
+  margin-bottom: 150px;
+}
+
+/* line 38, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-mb-165 {
+  margin-bottom: 150px;
+}
+
+/* line 43, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-emph--primary {
+  color: #85BBB1;
+  font-style: italic;
+}
+
+/* line 48, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-emph--secondary {
+  font-family: "Playfair Display", serif;
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 72px;
+  opacity: 1;
+}
+
+/* line 56, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-emph--stats::before {
+  content: '$';
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 40px;
+  opacity: .5;
+}
+
+/* line 64, ../Project_Solis-site/sass/sass-utils/_helpers.scss */
+.u-emph--stats::after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 36.4%;
+  right: 36.4%;
+  background-color: #85BBB1;
+  opacity: .5;
+}
+
+/* line 1, ../Project_Solis-site/sass/base/_reset.scss */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+/* line 5, ../Project_Solis-site/sass/base/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 25, ../Project_Solis-site/sass/base/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* line 30, ../Project_Solis-site/sass/base/_reset.scss */
+button {
+  width: max-content;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 34, ../Project_Solis-site/sass/base/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 38, ../Project_Solis-site/sass/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 41, ../Project_Solis-site/sass/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 44, ../Project_Solis-site/sass/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 47, ../Project_Solis-site/sass/base/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 52, ../Project_Solis-site/sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../Project_Solis-site/sass/base/_typography.scss */
+h1 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+  color: #262A3F;
+}
+
+/* line 10, ../Project_Solis-site/sass/base/_typography.scss */
+h2 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #262A3F;
+}
+
+/* line 19, ../Project_Solis-site/sass/base/_typography.scss */
+p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #262A3F;
+  opacity: .8;
+}
+
+/* line 29, ../Project_Solis-site/sass/base/_typography.scss */
+button {
+  opacity: .8;
+}
+
+/* line 33, ../Project_Solis-site/sass/base/_typography.scss */
+blockquote {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+/* line 43, ../Project_Solis-site/sass/base/_typography.scss */
+figcaption {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+/* line 1, ../Project_Solis-site/sass/layout/_grid.scss */
+body {
+  padding: 60px 0;
+}
+
+/* line 6, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 135px 1fr 135px;
+  grid-template-rows: auto;
+  grid-template-areas: 'header header header' '. main .' 'footer footer footer';
+}
+
+/* line 17, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-header {
+  grid-area: header;
+}
+
+/* line 20, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-header__content {
+  padding: 0 135px;
+}
+
+/* line 25, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main {
+  grid-area: main;
+}
+
+/* line 29, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-footer {
+  grid-area: footer;
+}
+
+/* line 34, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+}
+
+/* line 39, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-first {
+  grid-area: 1 / 1 / 2 / 4;
+  justify-self: start;
+}
+
+/* line 44, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__float-img-first {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+/* line 48, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-info {
+  grid-area: 2 / 3 / 3 / 7;
+  justify-self: end;
+}
+
+/* line 53, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-benefit-first {
+  grid-area: 3 / 1 / 4 / 4;
+}
+
+/* line 57, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-benefit-second {
+  grid-area: 3 / 4 / 4 / 7;
+}
+
+/* line 61, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-benefit-third {
+  grid-area: 4 / 1 / 5 / 4;
+}
+
+/* line 65, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-benefit-fourth {
+  grid-area: 4 / 4 / 5 / 7;
+}
+
+/* line 69, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-quote {
+  grid-area: 5 / 1 / 6 / 7;
+}
+
+/* line 73, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-video {
+  grid-area: 6 / 1 / 7 / 7;
+}
+
+/* line 77, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-video-header {
+  grid-area: 7 / 1 / 8 / 7;
+}
+
+/* line 81, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__float-img-second {
+  grid-area: 8 / 1 / 9 / 4;
+}
+
+/* line 85, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-promises {
+  grid-area: 8 / 1 / 9 / 7;
+}
+
+/* line 89, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-review {
+  grid-area: 9 / 1 / 11 / 7;
+}
+
+/* line 93, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-contact-header {
+  grid-area: 11 / 1 / 12 / 4;
+}
+
+/* line 97, ../Project_Solis-site/sass/layout/_grid.scss */
+.l-root .l-main__sect-contact-form {
+  grid-area: 11 / 4 / 12 / 7;
+}
+
+/* line 1, ../Project_Solis-site/sass/layout/_header.scss */
+.c-header {
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(4.5px);
+}
+
+/* line 11, ../Project_Solis-site/sass/layout/_header.scss */
+.c-header a {
+  color: #262A3F;
+  text-decoration: none;
+}
+
+/* line 16, ../Project_Solis-site/sass/layout/_header.scss */
+.c-header a:active {
+  color: #E64F3A;
+}
+
+/* line 20, ../Project_Solis-site/sass/layout/_header.scss */
+.c-header a:focus {
+  text-decoration-line: underline;
+  text-decoration-color: #F1897B;
+}
+
+/* line 25, ../Project_Solis-site/sass/layout/_header.scss */
+.c-header__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 34, ../Project_Solis-site/sass/layout/_header.scss */
+.c-header__full-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15.01px;
+  color: #fff;
+}
+
+/* line 43, ../Project_Solis-site/sass/layout/_header.scss */
+.c-header__main-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 30px;
+}
+
+/* line 1, ../Project_Solis-site/sass/layout/_button.scss */
+.o-btn {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* line 5, ../Project_Solis-site/sass/layout/_button.scss */
+.o-btn--primary {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #F1897B;
+}
+
+/* line 15, ../Project_Solis-site/sass/layout/_button.scss */
+.o-btn--primary:hover {
+  color: #E54F3A;
+}
+
+/* line 20, ../Project_Solis-site/sass/layout/_button.scss */
+.o-btn__text {
+  position: relative;
+}
+
+/* line 23, ../Project_Solis-site/sass/layout/_button.scss */
+.o-btn__text::after {
+  content: '';
+  position: absolute;
+  top: .55em;
+  left: .5em;
+  right: -.5rem;
+  height: .65em;
+  background-color: #F1897B;
+  opacity: .3;
+}
+
+/* line 35, ../Project_Solis-site/sass/layout/_button.scss */
+.o-btn__text:hover::after {
+  background-color: #E54F3A;
+}
+
+/* line 40, ../Project_Solis-site/sass/layout/_button.scss */
+.o-btn--big {
+  padding: 35px 90px;
+  border: 1px solid #E4E4E4;
+}
+
+/* line 45, ../Project_Solis-site/sass/layout/_button.scss */
+.o-btn--big:hover {
+  border-color: #E54F3A;
+}
+
+/* line 1, ../Project_Solis-site/sass/pages/_home.scss */
+body {
+  background-color: #e5e5e5;
+}
+
+/* line 5, ../Project_Solis-site/sass/pages/_home.scss */
+.home-page {
+  margin: 0 auto;
+  padding-top: 30px;
+  background-color: #fff;
+  background-image: url("../static/bg-images/first-screen-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+/* line 15, ../Project_Solis-site/sass/pages/_home.scss */
+.home-page .sect-first {
+  max-width: 523px;
+}
+
+/* line 19, ../Project_Solis-site/sass/pages/_home.scss */
+.home-page .sect-info {
+  padding: 45px 0;
+  max-width: 770px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  background-color: #fff;
+  opacity: .9;
+}
+
+/* line 32, ../Project_Solis-site/sass/pages/_home.scss */
+.home-page .sect-info span {
+  padding-bottom: 40px;
+  width: 48%;
+  position: relative;
+  text-align: center;
+}
+
+/* line 39, ../Project_Solis-site/sass/pages/_home.scss */
+.home-page .sect-info p {
+  width: 52%;
+}
+
+/* line 45, ../Project_Solis-site/sass/pages/_home.scss */
+.home-page .sect-benefit-first, .home-page .sect-benefit-second, .home-page .sect-benefit-third, .home-page .sect-benefit-fourth {
+  max-width: 570px;
+  min-height: 250px;
+  padding: 50px 35px 0 35px;
+  border-top: 1px solid #E4E4E4;
+}
+
+/* line 57, ../Project_Solis-site/sass/pages/_home.scss */
+.home-page .sect-quote {
+  padding: 100px 300px 160px 160px;
+  min-height: 400px;
+  background-image: url("../static/bg-images/quote-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=style.css.map */

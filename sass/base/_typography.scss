@@ -1,0 +1,51 @@
+h1 {
+    font-family: $font-header;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    color: $font-color-primary;
+}
+
+h2 {
+    font-family: $font-header;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: $font-color-primary;
+}
+
+p {
+    font-family: $font-paragraph;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: $font-color-primary;
+    opacity: .8;
+}
+
+button {
+    opacity: .8;
+}
+
+blockquote {
+    font-family: $font-paragraph;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+    color: $font-color-secondary;
+}
+
+figcaption {
+    font-family: $font-header;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: $font-color-secondary;
+}
