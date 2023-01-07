@@ -1,0 +1,33 @@
+.c-footer {
+    min-height: 86px;
+
+    p {
+        font-size: 14px;
+        opacity: .6;
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        color: $font-color-primary;
+        text-decoration: none;
+        opacity: 1;
+    }
+
+    a:active {
+        color: $font-color-link-focus;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__policies {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+}

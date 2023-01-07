@@ -28,6 +28,10 @@ body {
     
     .l-footer {
         grid-area: footer;
+
+        &__content {
+            padding: 0 $root-padding;
+        }
     }
 
     // main grid

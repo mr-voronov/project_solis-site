@@ -141,6 +141,68 @@ body {
     }
 
     .sect-reviews { // extends component
-        //
+        figure {
+            min-height: 340px;
+            position: relative;
+        }
+
+        figure::after {
+            content: "";
+            display: block;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            background-color: rgba(25, 28, 41, 0.6);
+        }
+
+        blockquote,
+        figcaption {
+            z-index: 1;
+        }
+
+        blockquote {
+            font-family: $font-paragraph;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.04em;
+            color: $font-color-secondary;
+            opacity: .8;
+        }
+
+        .review {
+            &-one {
+                background-image: URL("../static/bg-images/reviews-bg-1.png");
+            }
+
+            &-two {
+                background-image: URL("../static/bg-images/reviews-bg-2.png");
+            }
+
+            &-three {
+                background-image: URL("../static/bg-images/reviews-bg-3.png");
+            }
+        }
+    }
+
+    .sect-contact-header {
+        border-top: 1px solid $border-color-primary;
+
+        h2 {
+            margin-top: 82px;
+        }
+
+        p {
+            margin-top: 29px;
+        }
+    }
+
+    .sect-request-form {
+        border-top: 1px solid $border-color-primary;
     }
 }
