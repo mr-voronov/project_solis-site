@@ -1,0 +1,26 @@
+.c-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    input {
+        margin-bottom: 40px;
+        min-height: 32px;
+
+        border: none;
+        border-bottom: 1px solid $border-color-inp;
+
+        color: $font-color-inp;
+    }
+
+    &__content {
+        margin-top: 60px;
+        min-width: 470px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        align-self: flex-end;
+    }
+}

@@ -62,7 +62,10 @@
                 <figcaption>Lennon Burnett, Solis Group CEO</figcaption>
             </figure>
             <section class="l-main__sect-video sect-video u-mt-60 u-mb-25">
-                <video src="https://www.youtube.com/watch?v=vnbN9V_2Guk"></video>
+                <!-- <video controls poster="../static/bg-images/screensaver-video.png">
+                    <source src="https://www.youtube.com/watch?v=vnbN9V_2Guk" type="video/mp4">
+                </video> -->
+                <div class="sect-video__content"></div>
             </section>
             <section class="l-main__sect-video-header sect-video-header u-mt-25 u-mb-60">
                 <h2>A <span class="u-emph--primary">powerful API</span>, easy to use user interface</h2>
@@ -98,14 +101,16 @@
                 <h2>Contact <span class="u-emph--primary">our sales team</span></h2>
                 <p>Our team is happy to answer your sales questions.<br> Fill out the form and we’ll be in touch as soon as possible.</p>
             </section>
-            <form action="#" class="l-main__sect-contact-form c-form sect-request-form u-mt-50 u-mb-50">
-                <input type="text" name="name" placeholder="Your name">
-                <input type="email" name="email" placeholder="Email">
-                <input type="text" name="comment" placeholder="Tell more">
-                <button class="o-btn o-btn--primary"><span class="o-btn__text">SEND REQUEST</span></button>
+            <form action="#" class="l-main__sect-contact-form c-form sect-contact-form u-mt-50 u-mb-50">
+                <section class="c-form__content">
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="comment" placeholder="Tell more">
+                    <button class="o-btn o-btn--primary"><span class="o-btn__text">SEND REQUEST</span></button>
+                </section>
             </form>
         </main>
-        <footer class="l-footer c-footer u-mt-50">
+        <footer class="l-footer c-footer footer u-mt-50">
             <div class="l-footer__content c-footer__content">
                 <p class="c-footer__rights">© 2020 Solisgroup. All Rights Reserved.</p>
                 <p class="c-footer__maker">made by <a href="./pages/404.html">Zgraya.digital</a></p>

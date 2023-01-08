@@ -1,6 +1,11 @@
 .c-footer {
     min-height: 86px;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
     p {
         font-size: 14px;
         opacity: .6;
