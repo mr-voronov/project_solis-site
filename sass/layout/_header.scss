@@ -40,10 +40,20 @@
         color: $font-color-secondary;
     }
 
+    &__menu-logo {
+        display: none;
+    }
+
     &__main-menu {
         display: flex;
         flex-direction: row;
         align-items: center;
         column-gap: 30px;
+    }
+
+    @media all and (max-width: $m) {
+        &__main-menu {
+            display: none;
+        }
     }
 }

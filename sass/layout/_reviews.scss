@@ -36,4 +36,14 @@
         background-position: center;
         background-size: cover;
     }
+
+    @media all and (max-width: $xl) {
+        &__reviews-list {
+            flex-wrap: wrap;
+        }
+
+        .reviews-list__item {
+            width: 100%;
+        }
+    }
 }

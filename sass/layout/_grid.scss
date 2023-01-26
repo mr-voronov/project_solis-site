@@ -7,18 +7,28 @@ body {
     max-width: $root-width;
 
     display: grid;
-    grid-template-columns: $root-padding 1fr $root-padding;
+    grid-template-columns: $root-padding-xl 1fr $root-padding-xl;
     grid-template-rows: auto;
     grid-template-areas:
         'header header header'
         '. main .'
         'footer footer footer';
+    
+    @media all and (max-width: $l) {
+        grid-template-columns: $root-padding-l 1fr $root-padding-l;
+    }
 
     .l-header {
         grid-area: header;
     
         &__content {
-            padding: 0 $root-padding;
+            padding: 0 $root-padding-xl;
+        }
+
+        @media all and (max-width: $l) {
+            &__content {
+                padding: 0 $root-padding-l;
+            }
         }
     }
     
@@ -30,7 +40,13 @@ body {
         grid-area: footer;
 
         &__content {
-            padding: 0 $root-padding;
+            padding: 0 $root-padding-xl;
+        }
+
+        @media all and (max-width: $l) {
+            &__content {
+                padding: 0 $root-padding-l;
+            }
         }
     }
 
@@ -43,6 +59,12 @@ body {
         &__sect-first {
             grid-area: 1 / 1 / 2 / 4;
             justify-self: start;
+        }
+
+        @media all and (max-width: $l) {
+            &__sect-first {
+                grid-area: 1 / 1 / 2 / 7;
+            }
         }
 
         &__sect-info {
@@ -63,6 +85,21 @@ body {
     
         &__sect-benefit-fourth {
             grid-area: 4 / 4 / 5 / 7;
+        }
+
+        @media all and (max-width: $l) {
+            &__sect-benefit-first {
+                grid-area: 3 / 1 / 4 / 7;
+            }
+
+            &__sect-benefit-second {
+                grid-area: 4 / 1 / 5 / 7;
+            }
+
+            &__sect-benefit-third,
+            &__sect-benefit-fourth {
+                display: none;
+            }
         }
 
         &__sect-quote {
@@ -93,6 +130,16 @@ body {
         
         &__sect-contact-form {
             grid-area: 11 / 4 / 12 / 7;
+        }
+
+        @media all and (max-width: $xl) {
+            &__sect-contact-header {
+                grid-area: 11 / 1 / 12 / 7;
+            }
+            
+            &__sect-contact-form {
+                grid-area: 12 / 1 / 13 / 7;
+            }
         }
     }
 }

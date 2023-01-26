@@ -27,4 +27,23 @@
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+
+    @media all and (max-width: $xl) {
+        &__content--row {
+            justify-content: center;
+        }
+
+        &__content--col {
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+    }
+
+    @media all and (max-width: $m) {
+        &__content--row,
+        &__content--col {
+            margin: 0px;
+            width: 100%;
+        }
+    }
 }

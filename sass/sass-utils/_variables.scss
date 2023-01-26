@@ -1,6 +1,7 @@
 // Root
 $root-width: 1440px;
-$root-padding: 135px; 
+$root-padding-xl: 135px; 
+$root-padding-l: 35px;
 
 // General colors
 $bg-color-body: #e5e5e5;
@@ -28,3 +29,10 @@ $border-color-btn--big-hover: #E54F3A;
 // Component c-form
 $border-color-inp: rgba(38, 42, 63, .1);
 $font-color-inp: rgba(38, 42, 63, .5);
+
+// Media
+$xl: 1200px;
+$l: 992px;
+$m: 768px;
+$s: 576px;
+$xs: 576px;
