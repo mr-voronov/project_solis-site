@@ -15,12 +15,24 @@
 
     &__content {
         margin-top: 60px;
-        min-width: 470px;
+        width: 470px;
 
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: stretch;
         align-self: flex-end;
+    }
+
+    @media all and (max-width: $xl) {
+        &__content {
+            align-self: center;
+        }
+    }
+
+    @media all and (max-width: $m) {
+        &__content {
+            width: 100%;
+        }
     }
 }

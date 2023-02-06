@@ -673,12 +673,26 @@ body {
 /* line 16, ../Project_Solis-site/sass/layout/_form.scss */
 .c-form__content {
   margin-top: 60px;
-  min-width: 470px;
+  width: 470px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: stretch;
   align-self: flex-end;
+}
+
+@media all and (max-width: 1200px) {
+  /* line 28, ../Project_Solis-site/sass/layout/_form.scss */
+  .c-form__content {
+    align-self: center;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /* line 34, ../Project_Solis-site/sass/layout/_form.scss */
+  .c-form__content {
+    width: 100%;
+  }
 }
 
 /* line 1, ../Project_Solis-site/sass/layout/_footer.scss */
@@ -723,6 +737,13 @@ body {
   display: flex;
   flex-direction: row;
   gap: 32px;
+}
+
+@media all and (max-width: 768px) {
+  /* line 40, ../Project_Solis-site/sass/layout/_footer.scss */
+  .c-footer__content {
+    flex-direction: column;
+  }
 }
 
 /* line 1, ../Project_Solis-site/sass/pages/_home.scss */
@@ -868,7 +889,19 @@ body {
   }
 }
 
-/* line 132, ../Project_Solis-site/sass/pages/_home.scss */
+@media all and (max-width: 768px) {
+  /* line 100, ../Project_Solis-site/sass/pages/_home.scss */
+  .home-page .sect-quote {
+    padding: 20px 75px 40px 40px;
+    font-size: 1.2rem;
+  }
+  /* line 135, ../Project_Solis-site/sass/pages/_home.scss */
+  .home-page .sect-quote blockquote::before {
+    display: none;
+  }
+}
+
+/* line 141, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-video {
   max-width: 970px;
   width: 100%;
@@ -879,7 +912,7 @@ body {
   border-radius: 32px;
 }
 
-/* line 143, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 152, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-video::before {
   content: "";
   width: 13px;
@@ -892,7 +925,7 @@ body {
   border-radius: 50%;
 }
 
-/* line 157, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 166, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-video::after {
   content: "";
   width: 35px;
@@ -905,7 +938,7 @@ body {
   border-radius: 50%;
 }
 
-/* line 172, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 181, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-video .sect-video__content {
   width: 100%;
   height: 100%;
@@ -915,7 +948,7 @@ body {
   background-image: url("../static/bg-images/screensaver-video.png");
 }
 
-/* line 183, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 192, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-video .sect-video__content::after {
   content: "";
   width: 120px;
@@ -930,24 +963,24 @@ body {
   background-size: contain;
 }
 
-/* line 201, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 210, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-video-header {
   max-width: 970px;
   width: 100%;
 }
 
-/* line 205, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 214, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-video-header h2 {
   padding-bottom: 20px;
 }
 
-/* line 210, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 219, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-promises {
   min-height: 540px;
   background-image: url("../static/bg-images/promises-bg.png");
 }
 
-/* line 215, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 224, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-promises__content {
   padding: 75px 0 75px 70px;
   row-gap: 70px;
@@ -956,51 +989,51 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 210, ../Project_Solis-site/sass/pages/_home.scss */
+  /* line 219, ../Project_Solis-site/sass/pages/_home.scss */
   .home-page .sect-promises {
     height: fit-content;
     background-image: none;
   }
-  /* line 227, ../Project_Solis-site/sass/pages/_home.scss */
+  /* line 236, ../Project_Solis-site/sass/pages/_home.scss */
   .home-page .sect-promises__content {
     padding: 0;
     text-align: center;
   }
 }
 
-/* line 233, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 242, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-promises .w-42pct {
   width: 42%;
 }
 
 @media all and (max-width: 1200px) {
-  /* line 238, ../Project_Solis-site/sass/pages/_home.scss */
+  /* line 247, ../Project_Solis-site/sass/pages/_home.scss */
   .home-page .sect-promises .w-42pct {
     width: 100%;
   }
 }
 
 @media all and (max-width: 768px) {
-  /* line 244, ../Project_Solis-site/sass/pages/_home.scss */
+  /* line 253, ../Project_Solis-site/sass/pages/_home.scss */
   .home-page .sect-promises__content {
     row-gap: 20px;
   }
 }
 
-/* line 251, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 260, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-reviews figure {
   min-height: 340px;
   position: relative;
 }
 
 @media all and (max-width: 1200px) {
-  /* line 257, ../Project_Solis-site/sass/pages/_home.scss */
+  /* line 266, ../Project_Solis-site/sass/pages/_home.scss */
   .home-page .sect-reviews figure {
     min-height: fit-content;
   }
 }
 
-/* line 262, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 271, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-reviews figure::after {
   content: "";
   display: block;
@@ -1012,13 +1045,13 @@ body {
   background-color: rgba(25, 28, 41, 0.6);
 }
 
-/* line 275, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 284, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-reviews blockquote,
 .home-page .sect-reviews figcaption {
   z-index: 1;
 }
 
-/* line 280, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 289, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-reviews blockquote {
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -1030,42 +1063,42 @@ body {
   opacity: .8;
 }
 
-/* line 292, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 301, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-reviews .review-one {
   background-image: URL("../static/bg-images/reviews-bg-1.png");
 }
 
-/* line 296, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 305, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-reviews .review-two {
   background-image: URL("../static/bg-images/reviews-bg-2.png");
 }
 
-/* line 300, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 309, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-reviews .review-three {
   background-image: URL("../static/bg-images/reviews-bg-3.png");
 }
 
-/* line 306, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 315, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-contact-header {
   border-top: 1px solid #E4E4E4;
 }
 
-/* line 309, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 318, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-contact-header h2 {
   margin-top: 82px;
 }
 
-/* line 313, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 322, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-contact-header p {
   margin-top: 29px;
 }
 
-/* line 318, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 327, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .sect-contact-form {
   border-top: 1px solid #E4E4E4;
 }
 
-/* line 322, ../Project_Solis-site/sass/pages/_home.scss */
+/* line 331, ../Project_Solis-site/sass/pages/_home.scss */
 .home-page .footer {
   border-top: 1px solid #E4E4E4;
 }

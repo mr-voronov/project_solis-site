@@ -1,3 +1,7 @@
 .sass-cache/
 *.map
 git/
+node_modules/
+package-lock.json
+package.json
+postcss.config.js
